@@ -9,17 +9,18 @@ This PowerShell script is designed for use in a legitimate penetration testing e
     Appropriate permissions and access to the target systems
 
 
-# Installation and use
+# Use
 
-Clone or download the repository to your local machine.
-
-Open a PowerShell session or a PowerShell Integrated Scripting Environment (ISE).
-
-Navigate to the directory where the script is located.
+Open PowerShell or a PowerShell Integrated Scripting Environment (ISE).
 
 Modify the script to include the actual password hash and desired username. Replace ***"INSERT_PASSWORD_HASH_HERE"*** with the password hash and ***"INSERT_USERNAME_HERE"*** with the username.
 
-Customize the list of target hosts under the ***$Hosts*** variable to include the IP addresses or hostnames of the systems you want to test.
+Customize the list of target hosts under the $Hosts variable to include the IP addresses or hostnames of the systems you want to test.
+
+`Run the script by executing .\penetration_test_script.ps1 in PowerShell.`
+
+Review the output to determine the success or failure of authentication attempts.
+
 
 
 # Possible Problems and Solutions
@@ -46,3 +47,14 @@ Additional actions or commands can be added within the script to further test th
     The author and contributors of this script are not responsible for any misuse or illegal activities conducted using this script. Use it at your own risk.
 
     This script is provided as-is without any warranty or guarantee of its effectiveness or suitability for any specific purpose.
+    
+
+# References
+
+![PowerShell](https://learn.microsoft.com/en-us/powershell/).
+
+![win32](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-computersystem).
+
+![smbShare](https://learn.microsoft.com/en-us/powershell/module/smbshare/?view=windowsserver2022-ps&viewFallbackFrom=win10-ps).
+
+
